@@ -699,3 +699,46 @@
     }
 }
 
+/* ============================================
+   PERFECT MOBILE CHATBOT (NO CUTTING / CENTERED)
+=============================================== */
+@media (max-width: 768px) {
+
+    .chat-container {
+        position: fixed !important;
+        width: 92vw !important;        /* smaller so it never touches sides */
+        max-width: 420px !important;
+        height: 70vh !important;       /* compact height */
+        max-height: 520px !important;
+
+        left: 50% !important;          /* center align */
+        transform: translateX(-50%) scale(0) !important;
+        bottom: 100px !important;      /* above chatbot icon */
+
+        border-radius: 22px !important;
+        background: #000 !important;
+
+        box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+        overflow: hidden;
+    }
+
+    /* When active, centered popup */
+    .chat-container.active {
+        transform: translateX(-50%) scale(1) !important;
+    }
+
+    /* Chat messages height */
+    .chat-messages {
+        height: calc(70vh - 165px) !important;
+    }
+
+    /* Suggestion chips more compact */
+    .chat-suggestions {
+        padding: 8px !important;
+    }
+
+    /* Input area fix */
+    .chat-input-area {
+        padding: 10px !important;
+    }
+}
