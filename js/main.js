@@ -10,7 +10,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 /* ---------------------------------------------------
    SMOOTH SCROLL FOR NAV LINKS
 --------------------------------------------------- */

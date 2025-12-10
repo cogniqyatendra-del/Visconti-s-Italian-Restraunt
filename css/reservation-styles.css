@@ -512,3 +512,92 @@ select.reservation-input {
         font-size: 1.2rem;
     }
 }
+
+.reservation-input {
+    height: 52px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 10px;
+    padding: 0 18px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.reservation-input:focus {
+    border-color: #f4d03f;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 0 4px rgba(244, 208, 63, 0.15);
+    outline: none;
+    color: #fff;
+}
+
+.reservation-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Ensure text is visible in all states */
+.reservation-input:-webkit-autofill,
+.reservation-input:-webkit-autofill:hover,
+.reservation-input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.08) inset !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .reservation-section {
+        padding: 40px 0 !important;
+    }
+
+    .reservation-card {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .reservation-title {
+        font-size: 1.6rem;
+    }
+
+    .reservation-submit-btn {
+        padding: 12px 30px;
+        font-size: 0.95rem;
+    }
+
+    .thank-you-content {
+        padding: 35px 25px;
+        border-radius: 15px;
+    }
+
+    .thank-you-title {
+        font-size: 1.5rem;
+    }
+
+    .detail-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /* Enhanced input visibility on mobile */
+    .reservation-input {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font-size: 16px;
+        -webkit-appearance: none;
+    }
+
+    .reservation-input:focus {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    select.reservation-input {
+        color: #fff;
+    }
+
+    select.reservation-input option {
+        background: #1a1a1a;
+        color: #fff;
+    }
+}
