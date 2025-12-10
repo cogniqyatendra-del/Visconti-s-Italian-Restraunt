@@ -794,4 +794,14 @@
         text-align: center !important;
     }
 }
+/* ---------------------------------------------------
+   DESKTOP FIX: Move chatbot slightly left
+--------------------------------------------------- */
+@media (min-width: 769px) {
+    .chat-container {
+        right: 40px !important;   /* previously 0 or 20px */
+        bottom: 100px !important; /* keeps it floating nicely */
+    }
+}
+
 
