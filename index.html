@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <title>Visconti's Italian Restaurant – Leavenworth & Wenatchee</title>
+
+    <!-- Favicons -->
+    <link href="images/logo.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Satisfy"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/reservation-styles.css" rel="stylesheet" />
+    <link href="css/chatbot.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header / Navbar ======= -->
+    <!-- ======= Header / Navbar ======= -->
+    <header class="fixed-top d-flex align-items-center custom-header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="site-logo">
+          <a href="index.html">
+            <img
+              src="images/logo.png"
+              alt="Visconti's Logo"
+              class="img-fluid"
+              style="max-height: 55px"
+            />
+          </a>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="sr-only">Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="custom-nav" id="primary-navigation">
+          <ul class="d-flex align-items-center list-unstyled gap-4 mb-0">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="d-flex ">
+              <a class="book-table-btn" href="#reservation">Book Table</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex align-items-center justify-content-center text-center"
+    >
+      <div class="hero-inner text-white container">
+        <h1 class="hero-title">Visconti's Italian Restaurant</h1>
+        <p class="hero-subtitle">
+          Authentic Italian Classics • Wood-Fired Pizzas • Premium Wine List
+        </p>
+        <a href="#menu" class="hero-btn mt-4 d-inline-block">Explore Menu</a>
+         <!-- SCROLL DOWN ARROW -->
+<div class="scroll-down" onclick="scrollToNextSection()" >
+<i class="fa-solid fa-angle-down"></i>
+</div>
+      </div>
+     
+    </section>
+
+  
+    <!-- ======= About Section ======= -->
+    <section id="about" class="py-5 bg-white">
+      <div class="container py-5 text-center">
+        <!-- Centered Title -->
+        <div class="about-title-wrapper mb-5">
+          <h2
+            class="about-heading text-uppercase display-5 fw-bold mb-3"
+            style="letter-spacing: 4px"
+          >
+            About Us
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40">
+              <path fill="#d4af37" d="M32 8c-8.8 0-16 7.2-16 16 0 12 16 28 16 28s16-16 16-28c0-8.8-7.2-16-16-16zm0 22c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6z"/>
+              <path fill="#f4d03f" d="M32 18c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zm0 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/>
+            </svg>
+          </h2>
+          <div class="title-line bg-dark mx-auto"></div>
+        </div>
+
+        <!-- Two Column Layout: Text Left, Image Right -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <p
+              class="lead text-muted"
+              style="line-height: 1.9; font-size: 1.15rem; text-align: justify;"
+            >
+              We are committed to bringing balance and well-being to every
+              relationship we have with our family, our team members, guests,
+              community and vendors. We do this by developing a culture in all of
+              our restaurants that is based on tradition, quality and commitment.
+            </p>
+            <p
+              class="text-muted mt-4"
+              style="line-height: 1.8; font-size: 1.05rem; text-align: justify;"
+            >
+              At Visconti's, we believe that great food brings people together. 
+              Our passion for authentic Italian cuisine is matched only by our 
+              dedication to creating memorable dining experiences. From our 
+              wood-fired pizzas to our handcrafted pasta, every dish tells a 
+              story of Italian heritage and culinary excellence.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="about-image-container">
+              <img 
+                src="images/gallery_people.png" 
+                alt="Visconti's Restaurant Interior" 
+                class="about-image rounded-5" 
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Centered Content Below -->
+        <div class="about-content mx-auto">
+          <hr
+            class="about-divider border-dark opacity-100 my-5"
+            style="
+              border-top-width: 2px;
+              width: 60px;
+              margin: 0 auto !important;
+            "
+          />
+
+          <div class="mt-5">
+            <p
+              class="mb-4 text-muted"
+              style="line-height: 1.9; font-size: 1.05rem"
+            >
+              Every dish follows "Old World" cooking traditions that are
+              centered on using fresh, local, simple ingredients with roots that
+              trace back to their origins alongside making our guests feel like
+              part of the family:
+            </p>
+            <h4
+              class="fw-bold fst-italic mt-4"
+              style="font-family: 'Satisfy', cursive; color: #333"
+            >
+              "Good Food, Good Friends, Always!"
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="py-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-4">
+          Our Menu
+          <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40">
+            <path fill="#d4af37" d="M32 12c-8 0-14 4-16 10v4h32v-4c-2-6-8-10-16-10z"/>
+            <path fill="#f4d03f" d="M16 26v6c0 2 1 4 3 4h26c2 0 3-2 3-4v-6H16z"/>
+            <rect fill="#d4af37" x="18" y="36" width="28" height="16" rx="2"/>
+            <circle fill="#fff" cx="32" cy="18" r="3"/>
+          </svg>
+        </h2>
+        <p class="mb-5" style="color: black">
+          Authentic Italian dishes crafted with tradition and passion.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/pizza-1.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Wood-Fired Pizza"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Wood-Fired Pizzas</h4>
+                <p>
+                  Traditional Italian pizzas baked in our signature wood-fired
+                  oven.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/italian_classic.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Italian Classics"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Italian Classics</h4>
+                <p>
+                  Pasta, risotto, seafood & meat dishes crafted with old-world
+                  techniques.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/wine.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Wine Collection"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Wine Collection</h4>
+                <p>A broad and carefully curated selection of premium wines.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/menu.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Appetizers"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Appetizers</h4>
+                <p>Pancetta Prawns<br />Aioli, Fresh Lemon</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/chicken.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Insalata & Zuppe"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Insalata & Zuppe</h4>
+                <p>
+                  Add Grilled Chicken Breast, Shrimp, Italian Sausage or Top
+                  Sirloin
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="menu-card position-relative overflow-hidden">
+              <img
+                src="images/chicken_pasta1.jpeg"
+                class="img-fluid w-100 h-100"
+                alt="Pasta"
+              />
+              <div
+                class="menu-overlay d-flex flex-column justify-content-center align-items-center text-white p-3"
+              >
+                <h4 class="fw-bold">Pasta</h4>
+                <p>
+                  Substitute Gluten Free Pasta<br />Add Grilled Chicken Breast,
+                  Shrimp, Italian Sausage or Top Sirloin
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Explore Menu Button -->
+        <div class="text-center mt-5">
+          <a href="menu.html" class="explore-menu-btn">
+            <span>Explore Full Menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="py-5">
+      <div class="container-fluid text-center">
+        <h2 class="fw-bold mb-4">
+          Where Italy Meets Art
+          <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40">
+            <rect fill="#d4af37" x="8" y="18" width="48" height="32" rx="4"/>
+            <rect fill="#f4d03f" x="12" y="22" width="40" height="24" rx="2"/>
+            <circle fill="#d4af37" cx="32" cy="34" r="8"/>
+            <circle fill="#fff" cx="32" cy="34" r="5"/>
+            <circle fill="#d4af37" cx="48" cy="26" r="2"/>
+            <path fill="#d4af37" d="M20 14h24v4H20z"/>
+          </svg>
+        </h2>
+        <p class="text-muted mb-5">
+          Capturing the heart of authentic flavours & warm hospitality.
+        </p>
+
+        <div class="gallery-slider-container position-relative">
+          <div class="gallery-track-wrapper">
+            <div class="gallery-track-horizontal">
+              <!-- All 9 images in a row -->
+              <div class="gallery-item-single">
+                <img src="images/viscontia-hero.jpg" alt="Visconti's Hero Image" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery1.jpeg" alt="Gallery Image 1" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery2.jpg" alt="Gallery Image 2" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery3.jpg" alt="Gallery Image 3" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery4.jpeg" alt="Gallery Image 4" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery5.jpg" alt="Gallery Image 5" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery6.jpg" alt="Gallery Image 6" />
+              </div>
+
+              <div class="gallery-item-single">
+                <img src="images/gallery_chef.png" alt="Chef at Work" />
+              </div>
+              <div class="gallery-item-single">
+                <img src="images/gallery_interior.png" alt="Restaurant Interior" />
+              </div>
+            </div>
+          </div>
+
+          <button class="gallery-prev-btn gallery-nav-btn">&#10094;</button>
+          <button class="gallery-next-btn gallery-nav-btn">&#10095;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Reservation Section ======= -->
+    <section id="reservation" class="reservation-section py-5">
+      <div class="container">
+        <div class="reservation-header text-center mb-5">
+          <div class="reservation-icon mb-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+            </svg>
+          </div>
+          <h2 class="reservation-title mb-3">
+            Reserve Your Table
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="40" height="40">
+              <rect fill="#d4af37" x="12" y="28" width="40" height="4" rx="2"/>
+              <rect fill="#f4d03f" x="16" y="32" width="32" height="16" rx="2"/>
+              <circle fill="#d4af37" cx="20" cy="52" r="3"/>
+              <circle fill="#d4af37" cx="44" cy="52" r="3"/>
+              <path fill="#d4af37" d="M20 28v-8h4v8M40 28v-8h4v8"/>
+              <rect fill="#f4d03f" x="26" y="36" width="12" height="2" rx="1"/>
+              <rect fill="#f4d03f" x="26" y="40" width="12" height="2" rx="1"/>
+            </svg>
+          </h2>
+          <p class="reservation-subtitle">
+            Experience authentic Italian dining in a warm, welcoming atmosphere
+          </p>
+          <p class="reservation-note">
+            <strong>Note:</strong> For parties of 7 or more, please call <a href="tel:509-548-1213" class="phone-link">509-548-1213</a>
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-xl-8">
+            <div class="reservation-card">
+              <form id="reservationForm" class="reservation-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">👤</i> Full Name
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control reservation-input"
+                        id="guestName"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">📧</i> Email Address
+                      </label>
+                      <input
+                        type="email"
+                        class="form-control reservation-input"
+                        id="guestEmail"
+                        placeholder="your@email.com"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">📱</i> Phone Number
+                      </label>
+                      <input
+                        type="tel"
+                        class="form-control reservation-input"
+                        id="guestPhone"
+                        placeholder="(555) 123-4567"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">👥</i> Number of Guests
+                      </label>
+                      <select class="form-control reservation-input" id="guestCount" required>
+                        <option value="">Select guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">📅</i> Reservation Date
+                      </label>
+                      <input
+                        type="date"
+                        class="form-control reservation-input"
+                        id="reservationDate"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">🕐</i> Reservation Time
+                      </label>
+                      <select class="form-control reservation-input" id="reservationTime" required>
+                        <option value="">Select time</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="11:30 AM">11:30 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="12:30 PM">12:30 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="1:30 PM">1:30 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="5:30 PM">5:30 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="6:30 PM">6:30 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                        <option value="7:30 PM">7:30 PM</option>
+                        <option value="8:00 PM">8:00 PM</option>
+                        <option value="8:30 PM">8:30 PM</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-label">
+                        <i class="icon">💬</i> Special Requests (Optional)
+                      </label>
+                      <textarea
+                        class="form-control reservation-input"
+                        id="specialRequests"
+                        rows="3"
+                        placeholder="Any dietary restrictions, allergies, or special occasions..."
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="reservation-submit-btn">
+                      <span class="btn-text">Reserve Table</span>
+                      <span class="btn-icon">🍽️</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thank You Modal -->
+    <div class="thank-you-modal" id="thankYouModal">
+      <div class="thank-you-overlay"></div>
+      <div class="thank-you-content">
+        <button class="modal-close-btn" id="closeModal">&times;</button>
+        
+        <div class="success-animation">
+          <div class="checkmark-circle">
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+              <circle class="checkmark-circle-path" cx="26" cy="26" r="25" fill="none"/>
+              <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+          </div>
+        </div>
+
+        <h2 class="thank-you-title">Reservation Confirmed!</h2>
+        <p class="thank-you-message">
+          Thank you for choosing Visconti's Italian Restaurant
+        </p>
+
+        <div class="reservation-details">
+          <div class="detail-item">
+            <span class="detail-icon">👤</span>
+            <div class="detail-info">
+              <span class="detail-label">Guest Name</span>
+              <span class="detail-value" id="confirmName">-</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">📅</span>
+            <div class="detail-info">
+              <span class="detail-label">Date & Time</span>
+              <span class="detail-value" id="confirmDateTime">-</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">👥</span>
+            <div class="detail-info">
+              <span class="detail-label">Party Size</span>
+              <span class="detail-value" id="confirmGuests">-</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="confirmation-note">
+          A confirmation email has been sent to <strong id="confirmEmail">your email</strong>
+        </p>
+
+        <button class="thank-you-btn" id="closeModalBtn">
+          Perfect! Close
+        </button>
+      </div>
+    </div>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5">Contact & Locations</h2>
+
+        <div class="row align-items-center">
+          <!-- Left Side: Location Details -->
+          <div class="col-lg-5 text-start mb-4 mb-lg-0">
+            <div class="mb-5">
+              <h4 class="text-warning mb-2">Leavenworth</h4>
+              <p class="mb-1">636 Front St, Leavenworth, WA 98826</p>
+              <p><strong>Phone:</strong> <a href="tel:509-548-1213" class="text-white text-decoration-none">509-548-1213</a></p>
+            </div>
+
+            <div>
+              <h4 class="text-warning mb-2">Wenatchee</h4>
+              <p class="mb-0">
+                Visit our Wenatchee location – reservations via third-party
+                service (OpenTable).
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Side: Google Map -->
+          <div class="col-lg-7">
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5975601.176905469!2d-126.01284268106207!3d43.00409291538527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549a4d8b55eb2e4f%3A0x15810669c9de5150!2sVisconti&#39;s%20Italian%20Restaurant!5e0!3m2!1sen!2sus!4v1765299647510!5m2!1sen!2sus" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+
+        <hr class="border-light my-4" />
+
+        <div class="text-center">
+          <p>
+            Email:
+            <a href="mailto:info@viscontis.com" class="text-warning"
+              >info@viscontis.com</a
+            >
+          </p>
+          <p>
+            Direct Contact (CEO):
+            <a href="mailto:dancarr@viscontis.com" class="text-warning"
+              >dancarr@viscontis.com</a
+            >
+          </p>
+          
+          <!-- Social Media Links -->
+          <div class="social-links mt-5">
+            <h4 class="mb-4" style="color: #d4af37;">Follow Us</h4>
+            <div class="d-flex justify-content-center gap-3">
+              <a href="#" class="social-btn" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                  <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.9 0-184.9zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+              </a>
+              <a href="#" class="social-btn" aria-label="X (Twitter)">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center text-white bg-black">
+      <p class="mb-0">
+        © 2025 Visconti's Italian Restaurant. All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- Scroll To Top Button -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script src="js/chatbot.js"></script>
+  </body>
+</html>

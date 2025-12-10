@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Visconti's Italian Restaurant</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600|Satisfy" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="fixed-top d-flex align-items-center bg-dark">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="logo"><a href="index.html" class="text-white text-decoration-none">Visconti's</a></h1>
+
+      <nav class="navbar">
+        <ul class="d-flex list-unstyled gap-4 mb-0">
+          <li><a class="text-white" href="index.html#hero">Home</a></li>
+          <li><a class="text-white" href="about.html">About</a></li>
+          <li><a class="text-white" href="menu.html">Menu</a></li>
+          <li><a class="text-white" href="gallery.html">Gallery</a></li>
+          <li><a class="text-white" href="contact.html">Contact</a></li>
+          <li><a class="btn btn-warning btn-sm" href="index.html#reservation">Book Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="d-flex align-items-center justify-content-center text-center"
+    style="height:35vh; background:url('images/contact-hero.jpg') center/cover no-repeat;">
+    <div class="text-white">
+      <h1 class="display-5 fw-bold">Contact & Locations</h1>
+      <p class="lead">We'd love to hear from you — reservations, questions, events</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Leavenworth</h4>
+          <p>636 Front St, Leavenworth, WA 98826</p>
+          <p><strong>Phone:</strong> <a href="tel:+15095481213">509-548-1213</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@viscontis.com">info@viscontis.com</a></p>
+
+          <h5 class="mt-4">Hours (Example)</h5>
+          <p>Mon–Thu: 11:30 AM – 9:00 PM<br>Fri–Sat: 11:30 AM – 10:00 PM<br>Sun: 11:30 AM – 8:00 PM</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4 class="fw-bold">Wenatchee</h4>
+          <p>Visit our Wenatchee location page or reserve via OpenTable.</p>
+          <p class="mb-0">For private events or large parties, please contact us at <a href="mailto:dancarr@viscontis.com">dancarr@viscontis.com</a>.</p>
+
+          <div class="mt-4">
+            <!-- Simple contact form (front-end only) -->
+            <form class="p-3 border rounded shadow-sm" id="contactForm">
+              <div class="mb-2">
+                <input class="form-control" type="text" placeholder="Your Name" required>
+              </div>
+              <div class="mb-2">
+                <input class="form-control" type="email" placeholder="Your Email" required>
+              </div>
+              <div class="mb-2">
+                <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-warning">Send Message</button>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Google Map embed placeholder (replace with actual embed if desired) -->
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.google.com/maps?q=636+Front+St+Leavenworth+WA&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-3 text-center text-white bg-black">
+    <div class="container">
+      <p class="mb-0">© 2025 Visconti's Italian Restaurant. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
