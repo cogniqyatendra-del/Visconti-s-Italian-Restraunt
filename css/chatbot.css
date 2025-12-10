@@ -742,3 +742,56 @@
         padding: 10px !important;
     }
 }
+/* FIX: Send button cut issue on mobile */
+@media (max-width: 768px) {
+
+    .chat-input-area {
+        padding: 12px 16px 12px 10px !important; 
+        /* More right padding so send button is safely inside */
+    }
+
+    .chat-send {
+        margin-left: 10px !important;
+        margin-right: 4px !important; /* bring the button inward */
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        min-height: 42px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        border-radius: 50% !important;
+    }
+
+    .chat-send svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    /* Ensure the input box doesn't stretch too far */
+    .chat-input {
+        width: calc(100% - 60px) !important; 
+    }
+}
+/* Fix: Center suggestion chips in white card on mobile */
+@media (max-width: 768px) {
+
+    .chat-suggestions {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;   /* ❤️ Center horizontally */
+        align-items: center !important;
+        text-align: center !important;
+        padding: 12px 10px !important;        /* balanced padding */
+        gap: 10px !important;                 /* even spacing */
+    }
+
+    .suggestion-chip {
+        flex-shrink: 0 !important;
+        padding: 8px 14px !important;
+        font-size: 14px !important;
+        border-radius: 20px !important;
+        text-align: center !important;
+    }
+}
+
