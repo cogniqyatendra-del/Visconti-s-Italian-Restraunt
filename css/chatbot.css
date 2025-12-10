@@ -621,3 +621,81 @@
     cursor: pointer;
     z-index: 999999;
 }
+
+
+/* ============================================
+   COMPACT MOBILE CHATBOT (NOT FULL SCREEN)
+   Works on all phones & looks modern
+=============================================== */
+@media (max-width: 768px) {
+
+    .chat-container {
+        width: 88vw !important;
+        height: 65vh !important;
+        max-width: 420px !important;
+        max-height: 480px !important;
+
+        bottom: 90px !important;
+        right: 12px !important;
+        left: auto !important;
+        top: auto !important;
+
+        border-radius: 22px !important;
+        transform-origin: bottom right !important;
+
+        box-shadow: 0 10px 40px rgba(0,0,0,0.35);
+        overflow: hidden;
+    }
+
+    /* Messages height adjust */
+    .chat-messages {
+        height: calc(65vh - 150px) !important;
+    }
+
+    /* Suggestions compact */
+    .chat-suggestions {
+        padding: 6px !important;
+    }
+
+    .suggestion-chip {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+    }
+
+    /* Input area */
+    .chat-input-area {
+        padding: 8px !important;
+    }
+
+    .chat-input {
+        font-size: 14px !important;
+        padding: 8px 12px !important;
+    }
+
+    .chat-send svg,
+    .chat-clear svg {
+        width: 22px !important;
+        height: 22px !important;
+    }
+}
+/* Fix scroll-up button alignment next to chatbot (mobile only) */
+@media (max-width: 768px) {
+
+    /* Chatbot button (your existing design) */
+    .chat-button {
+        bottom: 25px !important; 
+        right: 25px !important;
+    }
+
+    /* Scroll-up button aligned perfectly to the LEFT of chatbot */
+    #scroll-top {
+        bottom: 25px !important;         /* SAME as chatbot */
+        right: 95px !important;          /* chatbot 25px + chatbot width 60px + 10px gap */
+        width: 48px !important;
+        height: 48px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+}
+
