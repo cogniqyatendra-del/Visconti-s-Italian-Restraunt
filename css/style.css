@@ -385,16 +385,18 @@ footer {
     display: block;
   }
 
+  /* FULL-SCREEN SLIDE-IN MOBILE MENU (NO BLANK SPACE) */
   .custom-nav {
     position: fixed;
-    inset: 0 0 0 30%;
-    background: #000000;
-    /* Solid black for mobile menu */
+    inset: 0 0 0 0;
+    /* <-- FULL WIDTH, removes blank space */
+    background: #000;
     backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: min(30vh, 10rem) 2em;
+    padding: 120px 2em 2em 2em;
+    /* spacing below header */
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.35s ease-in-out;
   }
 
   .custom-nav[data-visible="true"] {
